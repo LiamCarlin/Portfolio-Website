@@ -1,0 +1,482 @@
+/*
+=====================================================================
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+=====================================================================
+
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. About Section
+   d. Resume Section
+   e. Portfolio Section
+   f. Call To Action Section
+   g. Testimonials Section
+   h. Contact Section
+   i. Footer
+
+   c-v2. Hobby Section
+   c-v3. School Section
+   c-v4. Industry Section
+
+   c-v5. PUPs Section
+   c-v6. Labs Section
+   c-v7. CNC Section
+   c-v8. CNC Section
+
+   c-v9. Entry Section
+
+===================================================================== */
+
+
+/* ------------------------------------------------------------------ */
+/* c-v2. Hobby Section
+/* ------------------------------------------------------------------ */
+
+#hobby {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #hobby a, #hobby a:visited  { color: #fff; }
+ #hobby a:hover, #hobby a:focus { color: #11ABB0; }
+ 
+ #hobby h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #hobby h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #hobby p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #hobby .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #hobby .contact-details { width: 41.66667%; }
+ #hobby .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #hobby .main-col { padding-right: 5%; }
+ #hobby .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #hobby .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #hobby .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v3. School Section
+ /* ------------------------------------------------------------------ */
+ 
+ #school {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #school a, #school a:visited  { color: #fff; }
+ #school a:hover, #school a:focus { color: #11ABB0; }
+ 
+ #school h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #school h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #school p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #school .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #school .contact-details { width: 41.66667%; }
+ #school .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #school .main-col { padding-right: 5%; }
+ #school .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #school .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #school .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v4. Industry Section
+ /* ------------------------------------------------------------------ */
+ 
+ #industry {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #industry a, #industry a:visited  { color: #fff; }
+ #industry a:hover, #industry a:focus { color: #11ABB0; }
+ 
+ #industry h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #industry h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #industry p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #industry .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #industry .contact-details { width: 41.66667%; }
+ #industry .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #industry .main-col { padding-right: 5%; }
+ #industry .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #industry .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #industry .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v5. PUPs Section
+ /* ------------------------------------------------------------------ */
+ 
+ #pups {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #pups a, #pups a:visited  { color: #fff; }
+ #pups a:hover, #pups a:focus { color: #11ABB0; }
+ 
+ #pups h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #pups h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #pups p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #pups .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #pups .contact-details { width: 41.66667%; }
+ #pups .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #pups .main-col { padding-right: 5%; }
+ #pups .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #pups .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #pups .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v6. Labs Section
+ /* ------------------------------------------------------------------ */
+ 
+ #labs {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #labs a, #labs a:visited  { color: #fff; }
+ #labs a:hover, #labs a:focus { color: #11ABB0; }
+ 
+ #labs h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #labs h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #labs p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #labs .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #labs .contact-details { width: 41.66667%; }
+ #labs .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #labs .main-col { padding-right: 5%; }
+ #labs .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #labs .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #labs .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v7. CNC Section
+ /* ------------------------------------------------------------------ */
+ 
+ #cnc {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #cnc a, #cnc a:visited  { color: #fff; }
+ #cnc a:hover, #cnc a:focus { color: #11ABB0; }
+ 
+ #cnc h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #cnc h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #cnc p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #cnc .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #cnc .contact-details { width: 41.66667%; }
+ #cnc .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #cnc .main-col { padding-right: 5%; }
+ #cnc .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #cnc .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #cnc .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v8. Seek & Geek Section
+ /* ------------------------------------------------------------------ */
+ 
+ #seekNgeek {
+    background: #2B2B2B;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ #seekNgeek a, #seekNgeek a:visited  { color: #fff; }
+ #seekNgeek a:hover, #seekNgeek a:focus { color: #11ABB0; }
+ 
+ #seekNgeek h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #seekNgeek h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    color: #fff;
+    margin-bottom: 12px;
+ }
+ #seekNgeek p {
+    line-height: 30px;
+    color: #7A7A7A;
+ }
+ #seekNgeek .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #seekNgeek .contact-details { width: 41.66667%; }
+ #seekNgeek .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #seekNgeek .main-col { padding-right: 5%; }
+ #seekNgeek .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #seekNgeek .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #seekNgeek .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ /* ------------------------------------------------------------------ */
+ /* c-v9. Entry Section
+ /* ------------------------------------------------------------------ */
+ 
+ #entry {
+    /*background: #2B2B2B;*/
+    background: #fff;
+    /*padding-top: 96px;*/
+    padding-bottom: 66px;
+    overflow: hidden;
+ }
+ 
+ /*#entry a, #entry a:visited  { color: #fff; }*/
+ #entry a:hover, #entry a:focus { color: #11ABB0; }
+ 
+ #entry h1 {
+    font: 32px/40px 'opensans-bold', sans-serif;
+    /*color: #fff;*/
+    margin-bottom: 12px;
+ }
+ #entry h2 {
+    font: 22px/30px 'opensans-bold', sans-serif;
+    /*color: #fff;*/
+    margin-bottom: 12px;
+ }
+ #entry p {
+    line-height: 30px;
+    /*color: #7A7A7A;*/
+ }
+ #entry .profile-pic {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+ }
+ #entry .contact-details { width: 41.66667%; }
+ #entry .download {
+    width: 58.33333%;
+    padding-top: 6px;
+ }
+ #entry .main-col { padding-right: 5%; }
+ #entry .download .button {
+    margin-top: 6px;
+    background: #444;
+ }
+ #entry .download .button:hover {
+    background: #fff;
+    color: #2B2B2B;
+ }
+ #entry .download .button i {
+    margin-right: 15px;
+    font-size: 20px;
+ }
+ 
+ #entry .pic {
+     max-width: 80%;
+ }
+ #entry .eqn {
+     max-width: 80%;
+     max-height: 3em;
+ }
+ 
+ #entry section {
+    padding-top: 50px;
+    padding-bottom: 20px;
+ }
+ 
+ #entry table {
+     margin-top: 2em;
+     margin-bottom: 2em;
+     border-top: 1px solid #E3E3E3;
+     border-bottom: 1px solid #E3E3E3;
+ }
+ 
+ #entry td {
+     padding-right: 1em;
+     padding-left: 1em;
+ }
