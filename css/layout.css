@@ -33,8 +33,8 @@ header {
    max-height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(http://127.0.0.1:5501/Images/Megolfing1.jpeg) no-repeat top center;
-      background-image: url(http://127.0.0.1:5501/Images/Megolfing1.jpeg);
+   background: #161415 url(Megolfing1.jpeg) no-repeat top center;
+      background-image: url(Megolfing1.jpeg);
       background-position-x: center;
       background-position-y: top;
       background-size: initial;
