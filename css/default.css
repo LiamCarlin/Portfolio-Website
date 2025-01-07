@@ -777,3 +777,7 @@
      margin-right: auto !important;
      text-align: center !important;
  } 
+
+ .rounded-image {
+   border-radius: 12px;
+ }

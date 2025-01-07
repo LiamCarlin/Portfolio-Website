@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../Images/logo-no-background.png">
+    <link rel="icon" href="Images/logo-no-background.png">
     <title>Liam's Portfolio</title>
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/layout.css">
@@ -47,6 +47,70 @@
                     <div class="hero-image">
                         <img src="../Images/IMG_2506.jpeg" alt="Overview Rocket Image">
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thrust Vector Control (TVC) Mount Section -->
+    <section id="tvc-mount" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Thrust Vector Control (TVC) Mount</h2>
+                <p>
+                    The Thrust Vector Control (TVC) Mount is the heart of the VMAX Rocket, enabling it to achieve stable and controlled flight without the need for traditional fins. Inspired by SpaceX’s gimbaling Raptor engine technology, this innovative system allows the rocket’s engine to pivot, keeping it on course during ascent.
+                </p>
+                <div class="tvc-description"><h3>What is a TVC Mount?</h3>
+                <p>
+                    The TVC mount is a system that moves the rocket’s engine in two directions (X and Y axes), allowing the thrust to be directed dynamically. This control is essential for maintaining stability, especially in the absence of fins, by making real-time adjustments to counteract any disturbances during flight.
+                </p>
+                <h3>How It Works</h3>
+                <ul>
+                    <li><b>Dynamic Control:</b> The mount uses two small servo motors to tilt the engine based on data from onboard sensors.</li>
+                    <li><b>Feedback Loop:</b> A gyroscope and accelerometer provide real-time flight data, which is processed by a PID controller and Kalman filter. This ensures smooth and accurate corrections.</li>
+                    <li><b>Above-Center Pivot Point:</b> The mount’s pivot design maximizes stability and efficiency by placing the control point above the engine’s thrust center.</li>
+                </ul>
+                <h3>Design and Build</h3>
+                <ul>
+                    <li><b>CAD-Designed:</b> Fully modeled in Onshape, the mount was carefully engineered for precision.</li>
+                    <li><b>3D-Printed:</b> Fabricated with high-grade PLA for strength and lightweight performance.</li>
+                    <li><b>Integrated System:</b> Works seamlessly with the rocket’s Arduino-based flight computer and sensors.</li>
+                </ul>
+                <h3>Why It Matters</h3>
+                <ul>
+                    <li><b>No Fins Required:</b> Traditional rockets rely on fins for stability, but the TVC mount eliminates this need, allowing for a sleeker design.</li>
+                    <li><b>Real-Time Adjustments:</b> The mount can instantly respond to external forces, such as wind or imbalance, ensuring a steady and vertical flight.</li>
+                    <li><b>Advanced Control:</b> This technology bridges the gap between professional aerospace systems and model rockets.</li>
+                </ul>
+                <p>
+                    The VMAX Rocket’s TVC mount demonstrates how high-tech innovations can be applied on a smaller scale. It’s not just a model rocket feature—it’s a proof of concept for scalable, cutting-edge aerospace engineering.
+                </p>
+                <div class="slideshow-container">
+                    <!-- Slides -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="../Images/IMG_0666 2.jpeg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="../Images/IMG_2509.jpeg" style="width:100%">
+                    </div>
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="../Images/IMG_0747 2.jpeg" style="width:100%">
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
         </div>
@@ -138,17 +202,17 @@
                 <div class="specs-grid">
                     <div class="spec-item">
                         <h3>Challenge: Imbalanced thrust due to flexible materials.</h3>
-                        <img src="https://via.placeholder.com/150" alt="Imbalanced thrust" class="spec-image">
+                        <img src="../Images/png-clipart-3d-printing-filament-polylactic-acid-acrylonitrile-butadiene-styrene-material-spool-electronics-material.png" alt="Imbalanced thrust" class="spec-image">
                         <p>Solution: Upgraded to high-grade PLA for structural rigidity.</p>
                     </div>
                     <div class="spec-item">
                         <h3>Challenge: Over-filtering in code led to delayed responses.</h3>
-                        <img src="https://via.placeholder.com/150" alt="Over-filtering in code" class="spec-image">
+                        <img src="../Images/Screenshot 2024-12-30 at 3.46.35 PM.png" alt="Over-filtering in code" class="spec-image">
                         <p>Solution: Outsourced a refined Kalman filter implementation.</p>
                     </div>
                     <div class="spec-item">
                         <h3>Challenge: Slow SD card writing caused data bottlenecks.</h3>
-                        <img src="https://via.placeholder.com/150" alt="Slow SD card writing" class="spec-image">
+                        <img src="../Images/Photograph_of_64GB_Micro_SD_Card_0_SHG1WOMF9OXQ-removebg-preview.png" alt="Slow SD card writing" class="spec-image">
                         <p>Solution: Used a high-speed SD card and optimized data logging rates.</p>
                     </div>
                 </div>
@@ -156,49 +220,30 @@
         </div>
     </section>
 
-    <!-- Flight Simulations Section -->
-    <section id="flight-simulations" class="project-section">
-        <div class="row">
-            <div class="twelve columns">
-                <h2 class="section-title">Flight Simulations</h2>
-                <p>Before testing, flight scenarios were modeled using MATLAB to predict behavior under various conditions. Simulations provided insights into:</p>
-                <ul>
-                    <li>Optimal PID gain values.</li>
-                    <li>Stability adjustments for mid-flight corrections.</li>
-                    <li>Aerodynamic performance under different thrust vectoring scenarios.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results Section -->
-    <section id="results" class="project-section">
-        <div class="row">
-            <div class="twelve columns">
-                <h2 class="section-title">Results</h2>
-                <p>The VMAX Rocket achieved:</p>
-                <ul>
-                    <li>A successful controlled ascent.</li>
-                    <li>Stabilized trajectory using its gimbaling system.</li>
-                    <li>Accurate data logging for post-flight analysis.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Next Steps Section -->
-    <section id="next-steps" class="project-section">
-        <div class="row">
-            <div class="twelve columns">
+<!-- Next Steps Section -->
+<section id="next-steps" class="project-section">
+    <div class="row">
+        <div class="twelve columns">
+            <div class="next-steps">
                 <h2 class="section-title">Next Steps</h2>
-                <p>The VMAX Rocket will undergo additional MATLAB simulations to fine-tune its PID gains. The ultimate goal is to achieve:</p>
+                <p><b>The VMAX Rocket will undergo additional MATLAB simulations to fine-tune its PID gains. The ultimate goal is to achieve:</b></p>
                 <ul>
                     <li>Stable launch and recovery without parachutes.</li>
                     <li>Application of insights from VMAX to larger-scale rockets.</li>
                 </ul>
+                <p><b>Further development will include:</b></p>
+                <ul>
+                    <li>Integration of advanced telemetry systems for real-time data monitoring.</li>
+                    <li>Enhancement of the TVC mount for improved thrust vectoring accuracy.</li>
+                    <li>Collaboration with aerospace experts to refine design and performance.</li>
+                </ul>
+                <div class="next-steps-image-container">
+                    <img src="../Images/M6_ControlSystemsdiagram.png" alt="Next Steps Image" class="next-steps-image">
+            </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Gallery Section -->
     <section id="gallery" class="project-section">
@@ -266,5 +311,38 @@
             </div>
         </div>
     </footer>
+
+    <!-- Include JavaScript for slideshow -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>
