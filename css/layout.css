@@ -35,6 +35,19 @@ header {
    min-height: 500px;
    width: 100%;
    background: #161415;
+   background: #161415 url(Megolfing1.jpeg) no-repeat top center;
+      background-image: url(Megolfing1.jpeg);
+      background-position-x: center;
+      background-position-y: top;
+      background-size: initial;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial;
+      background-color: rgb(22, 20, 21);
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
 }
