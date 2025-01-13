@@ -28,26 +28,37 @@ body { background: #0f0f0f; }
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
 
+/* Base header styles */
 header {
    position: relative;
    max-height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(Megolfing1.jpeg) no-repeat top center;
-      background-image: url(Megolfing1.jpeg);
-      background-position-x: center;
-      background-position-y: top;
-      background-size: initial;
-      background-repeat-x: no-repeat;
-      background-repeat-y: no-repeat;
-      background-attachment: initial;
-      background-origin: initial;
-      background-clip: initial;
-      background-color: rgb(22, 20, 21);
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
+   background: #161415;
    text-align: center;
    overflow: hidden;
+}
+
+/* Index-specific header styles */
+.index-header:after {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-image: url(../Images/Screenshot\ 2025-01-12\ at\ 3.35.58\ PM.png);
+   background-position: center top;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   opacity: 0.5;
+   z-index: 1;
+}
+
+/* Ensure content stays above background */
+.index-header * {
+   position: relative;
+   z-index: 2;
 }
 
 /* vertically center banner section */
