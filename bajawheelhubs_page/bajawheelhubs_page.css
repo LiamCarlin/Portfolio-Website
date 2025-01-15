@@ -9,7 +9,7 @@ body {
     position: relative;
     height: 1014px;
     width: 100%;
-    background: #161415 url(../Images/Screenshot\ 2024-12-26\ at\ 3.09.06\ PM.png) no-repeat center center;
+    background: #161415 url(../Images/Liam\ Driving.PNG) no-repeat center center;
     background-size: cover !important;
     -webkit-background-size: cover !important;
     text-align: center;
@@ -57,7 +57,6 @@ body {
  /* Project Sections */
  .project-section {
     padding: 80px 0;
-    align-items: center;
     background: #fff;
  }
  
@@ -65,14 +64,16 @@ body {
     font-size: 2.4em;
     color: #333;
     margin-bottom: 40px;
-    margin-top: 40px;
     text-align: center;
+    width: 100%;
  }
  
  .project-description {
     font-size: 1.1em;
+    line-height: 1.6;
     color: #666;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    max-width: 800px;
     text-align: center;
  }
  
@@ -182,7 +183,7 @@ body {
  /* Responsive Design */
  @media screen and (max-width: 768px) {
     header {
-        height: 300px;
+        height: 60vh;
     }
     
     .section-title {
@@ -191,6 +192,13 @@ body {
     
     .tech-specs, .code-block {
         margin: 15px 0;
+    }
+    
+    .process-grid,
+    .analysis-grid,
+    .testing-grid,
+    .specs-grid {
+        grid-template-columns: 1fr;
     }
  }
  
@@ -202,6 +210,8 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-items: center;
+    align-items: center;
  }
  
  .spec-item {
@@ -209,24 +219,44 @@ body {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
  }
  
- .spec-item h3 {
-    color: #333;
-    margin-bottom: 15px;
-    font-size: 1.4em;
+ .spec-item:hover {
+    transform: translateY(-5px);
  }
  
  .spec-item ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
  }
  
  .spec-item li {
     margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
     color: #666;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+ }
+ 
+ .spec-item li:before {
+    position: absolute;
+    left: 0;
+    color: #333;
  }
  
  /* Evolution Section Styles */
@@ -243,12 +273,16 @@ body {
     color: #333;
     margin-bottom: 20px;
     font-size: 1.8em;
+    text-align: center;
+    width: 100%;
  }
  
  .version-block h4 {
     color: #666;
     margin: 15px 0;
     font-size: 1.4em;
+    text-align: center;
+    width: 100%;
  }
  
  .version-image {
@@ -310,3 +344,316 @@ body {
  footer .copyright li a:hover {
     color: #fff;
  }
+ 
+ /* Grid Layouts */
+ .process-grid,
+ .analysis-grid,
+ .testing-grid,
+ .specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+ }
+ 
+ /* Cards/Items */
+ .process-item,
+ .analysis-item,
+ .test-item,
+ .spec-item {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+ }
+ 
+ .process-item:hover,
+ .analysis-item:hover,
+ .test-item:hover,
+ .spec-item:hover {
+    transform: translateY(-5px);
+ }
+ 
+ /* List Styles */
+ .process-item ul,
+ .analysis-item ul,
+ .test-item ul,
+ .spec-item ul,
+ .team-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+ 
+ .process-item li,
+ .analysis-item li,
+ .test-item li,
+ .spec-item li,
+ .team-info li {
+    margin: 10px 0;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.4;
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+ }
+ 
+ .process-item li:before,
+ .analysis-item li:before,
+ .test-item li:before,
+ .spec-item li:before,
+ .team-info li:before {
+    position: absolute;
+    left: 0;
+    color: #333;
+ }
+ 
+ /* Team Section */
+ .team-info {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+ }
+ 
+ /* Images */
+ .section-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+ }
+ 
+ .section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+ }
+ 
+ @media screen and (max-width: 480px) {
+    .project-section {
+        padding: 40px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+    }
+ }
+ 
+ /* Center Section Content */
+ .project-section .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ /* Benefits Section */
+ .benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefit-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.benefit-content li {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1.1em;
+}
+
+/* Process Timeline */
+.process-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.process-timeline .benefit-card {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.process-timeline .benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.process-timeline .section-image {
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.process-timeline .section-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.process-timeline .benefit-card:hover .section-image img {
+    transform: scale(1.05);
+}
+
+/* Section Image with Citation */
+.section-image-with-citation {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.section-image-with-citation img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.citation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-radius: 5px;
+}
+
+.section-image-with-citation:hover img {
+    filter: brightness(0.5);
+}
+
+.section-image-with-citation:hover .citation {
+    opacity: 1;
+}
+
+/* Regular images without hover effect */
+.section-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.section-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
