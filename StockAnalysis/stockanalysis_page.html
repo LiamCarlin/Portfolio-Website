@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rocket Project</title>
+    <link rel="icon" href="../Images/logo-no-background.png" type="image/png">
+    <title>Stock Price Modeling and Prediction</title>
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/layout.css">
     <link rel="stylesheet" href="../css/layout_2.css">
@@ -23,147 +24,262 @@
                 <li><a href="../index.html#about">About</a></li>
                 <li><a href="../index.html#Engineering">Engineering</a></li>
                 <li><a href="../index.html#Coding">Coding</a></li>
-                <li><a href="../index.html#Interests">Interests</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="row banner">
             <div class="banner-text">
-                <h1 class="responsive-headline" style="font-size: 40px;">Stock Analysis</h1>
+                <h1 class="responsive-headline" style="font-size: 40px;">Stock Price Modeling and Prediction</h1>
             </div>
         </div>
     </header>
 
-    <!-- Project Overview Section -->
-    <section id="project-overview" class="project-section">
+    <!-- Introduction Section -->
+    <section id="introduction" class="project-section">
         <div class="row">
             <div class="twelve columns">
-                <h1 class="section-title">Project Overview</h1>
+                <h2 class="section-title">Introduction</h2>
                 <p class="project-description">
-                    <!-- Add project overview here -->
+                    Our stock modeling project explores how effectively historical data can be used to predict future stock price movements. Using the Geometric Brownian Motion (GBM) model, we aimed to achieve over 50% accuracy when compared to historical data and investigate whether the validated model could serve as a reliable forecasting tool for future trends.
                 </p>
-                <div class="hero-image-container">
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
                     <div class="hero-image">
-                        <img src="https://via.placeholder.com/800x400" alt="Project Image">
+                        <img src="../Images/Stock Intro Image.png" alt="Introduction Image">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Technical Details Section -->
-    <section id="technical-details" class="project-section">
+    <!-- Project Objective Section -->
+    <section id="project-objective" class="project-section">
         <div class="row">
             <div class="twelve columns">
-                <h2 class="section-title">Technical Specifications</h2>
-                <div class="specs-grid">
-                    <div class="spec-item">
-                        <h3>Component 1</h3>
-                        <ul>
-                            <li>Detail 1</li>
-                            <li>Detail 2</li>
-                            <li>Detail 3</li>
-                        </ul>
+                <h2 class="section-title">Project Objective</h2>
+                <p class="project-description">
+                    <strong>Modeling Question:</strong><br>
+                    How accurately can we model previous years’ stock fluctuations to achieve over 50% accuracy against historical data, and can this validated model effectively predict future trends and prices?
+                </p>
+                <p class="project-description">
+                    This question emphasizes predictive accuracy and general market behaviors rather than specific market events, making it ideal for exploring stochastic financial models.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Importance Section -->
+    <section id="real-world-importance" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Real-World Importance</h2>
+                <p class="project-description">
+                    Modeling and predicting stock price movements is crucial due to the significant financial and economic implications for various stakeholders:
+                </p>
+                <ul class="project-description">
+                    <li>Individual Investors: Informed decision-making for personal portfolios.</li>
+                    <li>Institutional Investment Strategies: Risk assessment and asset management.</li>
+                    <li>Corporate Financial Planning: Budgeting and resource allocation.</li>
+                    <li>Economic Policymaking: Understanding market stability and trends.</li>
+                </ul>
+                <p class="project-description">
+                    Achieving at least 50% accuracy in predicting stock price movements offers valuable insights for investment strategies and risk management practices.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Framework and Design Section -->
+    <section id="model-framework" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Model Framework and Design</h2>
+                <h3>The Geometric Brownian Motion (GBM) Model</h3>
+                <p class="project-description">
+                    The GBM model combines both predictable trends and random fluctuations to model stock prices over time. It’s commonly used in quantitative finance due to its ability to balance both elements in financial markets.
+                </p>
+                <p class="project-description">
+                    <strong>Mathematical Model:</strong><br>
+                    <ul>
+                        <li>Stock price at time t.</li>
+                        <li>Drift coefficient (long-term trend).</li>
+                        <li>Volatility coefficient (random price fluctuations).</li>
+                        <li>Wiener process increment for randomness.</li>
+                    </ul>
+                </p>
+                <p class="project-description">
+                    <strong>Key Parameters:</strong><br>
+                    <ul>
+                        <li>Drift: Represents the overall price trend direction.</li>
+                        <li>Volatility: Represents price fluctuations and market risk.</li>
+                        <li>Time Step: Daily intervals for simulation.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- System Boundary and Scope Section -->
+<section id="system-boundary" class="project-section">
+    <div class="row">
+        <div class="twelve columns">
+            <h2 class="section-title">System Boundary and Scope</h2>
+            <p class="project-description">
+                The GBM model focuses on internal factors, such as daily closing prices, drift, and volatility. It deliberately excludes external factors like market news, economic events, and intraday price movements to maintain simplicity and focus on historical price patterns.
+            </p>
+            <div class="hero-image-container" style="max-width: 400px; margin: 0 auto;">
+                <div class="hero-image">
+                    <img src="../Images/System Boundary.png" alt="System Boundary Image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Implementation and Methodology Section -->
+    <section id="implementation" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Implementation and Methodology</h2>
+                <h3>Model Workflow</h3>
+                <p class="project-description">
+                    The GBM model was implemented using MATLAB and followed these steps:
+                </p>
+                <ul class="project-description">
+                    <li>Data Collection: Historical stock price data for Amazon (AMZN) was used.</li>
+                    <li>Parameter Sweeping: A range of drift and volatility values were tested to find optimal parameters.</li>
+                    <li>Simulation Runs: Multiple GBM simulations were run using the optimal parameters.</li>
+                    <li>Accuracy Testing: The model’s performance was validated by comparing predicted prices against real historical data.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 400px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/Model Workflow.png" alt="Implementation Image">
                     </div>
-                    <div class="spec-item">
-                        <h3>Component 2</h3>
-                        <ul>
-                            <li>Detail 1</li>
-                            <li>Detail 2</li>
-                            <li>Detail 3</li>
-                        </ul>
-                    </div>
-                    <!-- Add more components as needed -->
+                </div>
+
+                <div class="code-block">
+                    <pre><code class="language-matlab" data-lang="matlab">
+    % Simulate Stock Prices using GBM
+    mu_range = linspace(-0.5, 0.5, 100); % Drift coefficient range
+    sigma_range = linspace(0.1, 1, 100); % Volatility coefficient range
+
+    % Loop through parameter space
+    for mu = mu_range
+        for sigma = sigma_range
+            modeled_prices = simulatePrices(prices(1), length(prices), mu, sigma);
+            accuracy = calculateAccuracy(prices, modeled_prices);
+            if accuracy > best_accuracy
+                best_accuracy = accuracy;
+                best_mu = mu;
+                best_sigma = sigma;
+            end
+        end
+    end
+                    </code></pre>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Evolution Section -->
-    <section id="evolution" class="project-section">
+    <!-- Results and Findings Section -->
+    <section id="results" class="project-section">
         <div class="row">
             <div class="twelve columns">
-                <h2 class="section-title">Evolution of the Project</h2>
-                
-                <!-- Version 1 Section -->
-                <div class="version-block">
-                    <h3>Version 1: Initial Design</h3>
-                    <div class="key-points">
-                        <h4>Key Objectives</h4>
-                        <ul>
-                            <li>Objective 1</li>
-                            <li>Objective 2</li>
-                            <li>Objective 3</li>
-                        </ul>
-
-                        <h4>Design Highlights</h4>
-                        <ul>
-                            <li>Highlight 1</li>
-                            <li>Highlight 2</li>
-                            <li>Highlight 3</li>
-                        </ul>
-
-                        <h4>Challenges</h4>
-                        <ul>
-                            <li>Challenge 1</li>
-                            <li>Challenge 2</li>
-                            <li>Challenge 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Version 2 Section -->
-                <div class="version-block">
-                    <h3>Version 2: Improved Design</h3>
-                    <div class="key-points">
-                        <h4>Solutions Implemented</h4>
-                        <ul>
-                            <li>Solution 1</li>
-                            <li>Solution 2</li>
-                            <li>Solution 3</li>
-                        </ul>
-
-                        <h4>Results Achieved</h4>
-                        <ul>
-                            <li>Result 1</li>
-                            <li>Result 2</li>
-                            <li>Result 3</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Why It Stands Out -->
-                <div class="version-block">
-                    <h3>Why It Stands Out</h3>
-                    <p>Describe why this project stands out.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="project-section">
-        <div class="row">
-            <div class="twelve columns">
-                <h2 class="section-title">Gallery</h2>
+                <h2 class="section-title">Results and Findings</h2>
+                <h3>Accuracy and Prediction Performance</h3>
+                <p class="project-description">
+                    The GBM model successfully achieved 92.99% directional accuracy, surpassing the original goal of 50%. This was validated by comparing historical Amazon stock prices against model-generated predictions.
+                </p>
+                <p class="project-description">
+                    <strong>Key Metrics:</strong><br>
+                    <ul>
+                        <li>Best Drift: [Value]</li>
+                        <li>Best Volatility: [Value]</li>
+                        <li>Directional Accuracy: ~93%</li>
+                        <li>Mean Absolute Percentage Error (MAPE): Consistent with literature benchmarks.</li>
+                    </ul>
+                </p>
+                <h3>Sensitivity Analysis</h3>
+                <p class="project-description">
+                    The model’s sensitivity was tested with different volatility levels and drift rates:
+                </p>
+                <ul class="project-description">
+                    <li>Low Volatility (σ = 0.05): Smooth price trajectories with minimal fluctuations.</li>
+                    <li>Medium Volatility (σ = 0.11): Realistic market fluctuations with visible trend reversals.</li>
+                    <li>High Volatility (σ = 0.16): Significant price swings, challenging trend identification.</li>
+                </ul>
                 <div class="image-gallery">
-                    <img src="https://via.placeholder.com/300x200" alt="Image 1" class="gallery-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Image 2" class="gallery-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Image 3" class="gallery-image">
-                    <img src="https://via.placeholder.com/300x200" alt="Image 4" class="gallery-image">
+                    <div class="gallery-image">
+                        <img src="../Images/sigma 0.09.png" alt="Historical vs Predicted Prices">
+                        <div class="gallery-caption">Figure 1: Historical vs. Predicted Stock Prices</div>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="../Images/sigma 0.17.png" alt="Parameter Sweep Analysis">
+                        <div class="gallery-caption">Figure 2: Parameter Sweep Analysis</div>
+                    </div>
+                    <div class="gallery-image">
+                        <img src="../Images/sigma 0.26.png" alt="Predicted Stock Price Ranges">
+                        <div class="gallery-caption">Figure 3: Predicted Stock Price Ranges under Different Volatility Conditions</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section id="video" class="project-section">
+    <!-- Validation and Testing Section -->
+    <section id="validation" class="project-section">
         <div class="row">
             <div class="twelve columns">
-                <h2 class="section-title">Video</h2>
-                <div class="video-container">
-                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+                <h2 class="section-title">Validation and Testing</h2>
+                <p class="project-description">
+                    The model was validated against historical data with the following results:
+                </p>
+                <ul class="project-description">
+                    <li>Directional Accuracy: Correctly predicted price movements in most cases.</li>
+                    <li>Range Accuracy: Actual prices stayed within predicted ranges.</li>
+                    <li>Statistical Validation: The model’s results were consistent with theoretical GBM behavior and other financial modeling literature.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/Zoomed in model vs historical.png" alt="Validation Image">
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Steps and Improvements Section -->
+    <section id="future-steps" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Future Steps and Improvements</h2>
+                <p class="project-description">
+                    To enhance the model further, the following steps can be taken:
+                </p>
+                <ul class="project-description">
+                    <li>Incorporate Economic Indicators: Integrating factors like interest rates and GDP data.</li>
+                    <li>Adaptive Volatility Models: Exploring models like the Heston Model for variable volatility.</li>
+                    <li>Intraday Price Modeling: Including shorter timeframes for more granular analysis.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/very accurate model from the web.webp" alt="Future Steps Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Conclusion</h2>
+                <p class="project-description">
+                    Our GBM-based stock modeling project successfully demonstrated high accuracy in predicting stock price movements. While limitations exist due to simplifying assumptions, the model offers valuable insights for investment strategies and risk management. The 92.99% directional accuracy, combined with a systematic parameter sweep and validation process, underscores its reliability for historical price modeling.
+                </p>
+                <p class="project-description">
+                    For more details, explore our project documentation and data here: <a href="../Images/Modsim project Stocks.pdf">Link to Project Data</a>
+                </p>
             </div>
         </div>
     </section>
@@ -175,15 +291,11 @@
                 <ul class="social-links">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
                 </ul>
                 <ul class="copyright">
-                    <li>&copy; 2023 Liam Carlin</li>
-                    <li>Design by <a href="http://www.styleshout.com/">Styleshout</a></li>
+                    <li>&copy; 2024 Liam Carlin and Kilan Rougeot</li>
                 </ul>
             </div>
         </div>
