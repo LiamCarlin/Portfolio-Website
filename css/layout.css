@@ -917,6 +917,15 @@ footer .social-links li {
 
 footer .social-links li:first-child { margin-left: 0; }
 
+footer .social-links li a {
+    color: #fff; /* Ensure icons are visible */
+    transition: color 0.3s;
+}
+
+footer .social-links li a:hover {
+    color: #11ABB0; /* Change color on hover */
+}
+
 /* Go To Top Button */
 #go-top {
 	position: absolute;
