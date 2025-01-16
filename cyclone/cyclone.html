@@ -1,0 +1,290 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/logo-no-background.png" type="image/png">
+    <title>Cyclone: Featherweight Class BattleBot</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/layout_2.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="cyclone.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="home" style="height: 1014px;">
+        <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <ul id="nav" class="nav">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#Engineering">Engineering</a></li>
+                <li><a href="../index.html#Coding">Coding</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row banner">
+            <div class="banner-text">
+                <h1 class="responsive-headline" style="font-size: 40px;">Cyclone: Featherweight Class BattleBot</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Introduction</h2>
+                <p class="project-description">
+                    Cyclone is a 3-pound featherweight class BattleBot engineered for high-speed, high-impact combat. Designed and built by Liam Carlin during his junior year at Winchester High School, Cyclone was developed to compete in the National Havoc Robot League (NHRL). With a powerful vertical spinner weapon, durable construction, and a precision control system, Cyclone embodies a relentless offensive strategy while maintaining exceptional defensive resilience.
+                </p>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/cyclone-1.png" alt="Cyclone BattleBot">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Journey Section -->
+    <section id="design-journey" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">The Design Journey: From Concept to Combat</h2>
+                <p class="project-description">
+                    Cyclone was born from a series of creative iterations and design challenges. Initially, the design was a spinning disk on wheels with no steering system, focused purely on acceleration and collision power. The original idea was to allow the bot to spin faster and faster until it collided with an opponent. However, this design lacked control, resulting in unpredictable movements and the inability to aim strikes effectively.
+                </p>
+                <h3>Key Design Challenges:</h3>
+                <ul>
+                    <li>Control Limitations: The original concept lacked any steering mechanism, making it difficult to target opponents intentionally.</li>
+                    <li>Gyroscopic Instability: Early prototypes explored a horizontal spinning weapon inspired by the renowned heavyweight BattleBot Tombstone. However, the gyroscopic forces from the horizontal spinner made the robot unstable, often causing it to tip or lose balance.</li>
+                    <li>Durability Concerns: The early iterations used carbon fiber-infused plastic, which proved insufficient when tested against other spinning weapon bots. The material could not withstand direct impacts effectively.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/front of cyclone minimal electronics.jpeg" alt="Design Journey">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Design Section -->
+    <section id="current-design" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">The Breakthrough: Cyclone’s Current Design</h2>
+                <p class="project-description">
+                    Cyclone evolved into a highly refined vertical spinner BattleBot with a focus on maneuverability, impact power, and defense. This final design iteration resolved the previous limitations by introducing a more balanced and controlled combat strategy.
+                </p>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/top down cyclone all electronics.jpeg" alt="Current Design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mechanical Design Section -->
+    <section id="mechanical-design" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Mechanical Design and Components Breakdown</h2>
+                <p class="project-description">
+                    Cyclone’s structure is built around a robust yet lightweight frame optimized for both offensive and defensive strategies.
+                </p>
+                <h3>Weapon System: High-Speed Vertical Spinner</h3>
+                <ul>
+                    <li>Design: Cyclone’s primary weapon is a vertical spinner disk, engineered for maximum kinetic energy transfer.</li>
+                    <li>Speed: Powered by a brushless motor and electronic speed controller (ESC), the weapon spins at an impressive 16,500 RPM.</li>
+                    <li>Drive Mechanism: The weapon is belt-driven, allowing efficient power transfer from the motor while minimizing motor stress.</li>
+                    <li>Material: Currently, the spinner is constructed from high-strength TPU but will be upgraded to aluminum for better impact durability.</li>
+                </ul>
+                <h3>Why a Vertical Spinner?</h3>
+                <ul>
+                    <li>Direct Upward Force: Can flip or destabilize opponents upon contact.</li>
+                    <li>Focused Damage: The concentrated point of impact delivers maximum energy to a smaller area.</li>
+                    <li>Gyroscopic Stability: Compared to horizontal spinners, vertical spinners reduce gyroscopic destabilization, making the bot more balanced.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/top right cyclone all electronics.jpeg" alt="Mechanical Design">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivetrain and Mobility Section -->
+    <section id="drivetrain-mobility" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Drivetrain and Mobility: Tank Drive System</h2>
+                <p class="project-description">
+                    Cyclone uses a tank drive system for precise movement and control. Each wheel is powered independently by a brushed DC motor paired with a planetary gearbox for enhanced torque and durability.
+                </p>
+                <ul>
+                    <li>Drive Control: Controlled via an RC transmitter with dual-stick control (tank-style). Each stick corresponds to an independent wheel, allowing fine control over turning, spinning, and forward/backward movement.</li>
+                    <li>Wheels: The wheels are made from TPU for impact absorption and better traction on various surfaces.</li>
+                    <li>Drive Type: Direct drive, ensuring fewer components and a compact, responsive design.</li>
+                </ul>
+                <h3>Mobility Advantages:</h3>
+                <ul>
+                    <li>Precise Maneuvering: Tank drive allows for pivot turns and fine adjustments.</li>
+                    <li>Reduced Complexity: Fewer mechanical components reduce potential points of failure.</li>
+                    <li>Quick Recovery: Cyclone can reorient quickly if flipped or knocked off balance.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/side of cyclone.png" alt="Drivetrain and Mobility">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structural Frame Section -->
+    <section id="structural-frame" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Structural Frame and Armor Design</h2>
+                <p class="project-description">
+                    Cyclone’s structural design focuses on a balance of weight distribution, strength, and impact resistance.
+                </p>
+                <ul>
+                    <li>Material: The current frame is 3D printed using TPU (thermoplastic polyurethane). TPU was chosen for its shock-absorbing properties and lightweight nature, but future iterations will use milled aluminum for increased rigidity and damage resistance.</li>
+                    <li>Armor Layers: Cyclone features steel upper and lower plates, adding a protective shield against direct hits to the internals.</li>
+                    <li>Reinforced Side Panels: The side panels are designed to deflect non-spinning weapon strikes and provide additional structural integrity.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/structural-frame.jpg" alt="Structural Frame">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Electronics and Power System Section -->
+    <section id="electronics-power" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Electronics and Power System</h2>
+                <p class="project-description">
+                    Cyclone’s power and control system is built for reliability and sustained performance in the arena.
+                </p>
+                <ul>
+                    <li>Power Supply: The bot is powered by a 3S LiPo (Lithium Polymer) battery, chosen for its high discharge rate and lightweight properties.</li>
+                    <li>Motor Control:
+                        <ul>
+                            <li>Weapon: Brushless motor with ESC for high-speed spinning.</li>
+                            <li>Drive: Brushed motors with planetary gearboxes for control and torque.</li>
+                        </ul>
+                    </li>
+                    <li>Receiver: The RC receiver links directly to the tank drive system, allowing real-time control during matches.</li>
+                </ul>
+                <div class="hero-image-container" style="max-width: 600px; margin: 0 auto;">
+                    <div class="hero-image">
+                        <img src="../Images/3lb-Beater-Bar-Electronics-sq-500.webp" alt="Electronics and Power System">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combat Strategy Section -->
+    <section id="combat-strategy" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Combat Strategy and Performance</h2>
+                <p class="project-description">
+                    Cyclone is designed for an aggressive, high-speed combat style, focusing on dealing damage while maintaining control.
+                </p>
+                <h3>Offensive Strategy:</h3>
+                <ul>
+                    <li>Primary Weapon Impact: The vertical spinner delivers high kinetic energy strikes capable of flipping or severely damaging opponents.</li>
+                    <li>Precision Attacks: The tank drive allows Cyclone to line up attacks with minimal drift or instability.</li>
+                    <li>Speed Control: The 16,500 RPM weapon speed enables rapid engagements while preventing prolonged spin-ups, which can lead to gyroscopic issues.</li>
+                </ul>
+                <h3>Defensive Strategy:</h3>
+                <ul>
+                    <li>Shock Absorption: TPU frame reduces energy transfer from opponent strikes.</li>
+                    <li>Steel Reinforcement: Steel top and bottom plates add resistance against vertical spinners and hammer weapons.</li>
+                    <li>Low Center of Gravity: Cyclone’s weight distribution minimizes flipping vulnerability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing and Results Section -->
+    <section id="testing-results" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Testing and Results</h2>
+                <p class="project-description">
+                    While Cyclone has not yet competed officially, it has undergone extensive testing with impressive results:
+                </p>
+                <ul>
+                    <li>Destructive Capability: The weapon successfully shattered test objects, including plywood panels and plastic components.</li>
+                    <li>Structural Integrity: TPU and steel layers absorbed multiple strikes without critical damage.</li>
+                    <li>Control and Handling: The tank drive system allowed precise maneuvering during combat simulations.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Upgrades Section -->
+    <section id="future-upgrades" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Future Upgrades and Enhancements</h2>
+                <p class="project-description">
+                    Cyclone continues to evolve with the goal of achieving peak performance in competitive events. Planned upgrades include:
+                </p>
+                <ul>
+                    <li>Material Upgrade: Transition from TPU to milled aluminum for greater impact resistance.</li>
+                    <li>Increased Motor Power: A higher KV brushless motor for even faster weapon spin rates.</li>
+                    <li>Modular Weapon Options: Swappable weapon mounts for adapting to different opponents.</li>
+                    <li>Reinforced Armor: Additional titanium side plates for better all-around protection.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section id="conclusion" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Conclusion: Engineered for Victory</h2>
+                <p class="project-description">
+                    Cyclone stands as a testament to engineering creativity, persistence, and iterative design. From its early spinning disk prototype to the precision-engineered vertical spinner it is today, Cyclone demonstrates how innovation and adaptation lead to success in combat robotics.
+                </p>
+                <p class="project-description">
+                    Stay tuned for Cyclone’s official debut in the NHRL arena and follow Liam’s journey as he continues to push the boundaries of combat robotics design.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2024 Liam Carlin</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
