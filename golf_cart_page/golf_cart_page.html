@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="icon" href="../Images/logo-no-background.png">
+    <title>Liam's Portfolio</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Golf Push Cart</title>
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/layout_2.css">
+    <link rel="stylesheet" href="../css/media-queries.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+    <link rel="stylesheet" href="../css/prism.css">
+    <link rel="stylesheet" href="golf_cart_page.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="home" style="height: 1014px;">
+        <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+            <ul id="nav" class="nav">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#Engineering">Engineering</a></li>
+                <li><a href="../index.html#Coding">Coding</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="row banner" style="display: flex; align-items: center; justify-content: center; height: 100%; text-align: center;">
+            <div class="banner-text">
+            <h1 class="responsive-headline" style="font-size: 40px;">Wi-Fi Controlled Electric Golf Cart</h1>
+            </div>
+        </div>
+        </header>
+
+    <!-- Project Overview Section -->
+    <section id="project-overview" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h1 class="section-title">Engineering a Solution for Time Together</h1>
+                <p class="project-description">
+                    For a long time, my dad has struggled with chronic back pain. Despite that, one thing we've always loved doing together is playing golf. But his back issues made walking the course difficult, and using a powered golf cart meant we weren't spending time together. This project was born from a simple question: what if my dad could still walk the course without having to carry or push his bag?
+                </p>
+                <div class="hero-image-container">
+                    <div class="hero-image" style="max-width: 100%; height: auto;">
+                        <img src="../Images/placeholder-golf-cart-hero.jpeg" alt="Electric Golf Cart" style="width: 50%; height: auto;">
+                        <p class="image-caption">Electric Cart In Progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="the-problem" class="project-section alt-bg">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">The Problem</h2>
+                
+                <div class="problem-content">
+                    <div class="problem-grid">
+                        <div class="problem-item">
+                            <div class="problem-icon">⛳</div>
+                            <h3>Chronic Back Pain</h3>
+                            <p>My dad's chronic back pain made carrying a golf bag impossible and pushing a standard cart difficult due to the constant forward lean required.</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="problem-icon">🚗</div>
+                            <h3>Lost Connection</h3>
+                            <p>Using a powered golf cart meant we weren't walking together — the conversations, jokes, and quiet moments on the fairway were all lost.</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="problem-icon">💰</div>
+                            <h3>Expensive Solutions</h3>
+                            <p>Electric push carts on the market cost around $1,500 and offered little innovation — something that could be built for a fraction of the price.</p>
+                        </div>
+                        <div class="problem-item">
+                            <div class="problem-icon">💡</div>
+                            <h3>The Solution</h3>
+                            <p>Build a fully functional, Wi-Fi-controlled electric golf push cart from the ground up — customized exactly to what my dad needed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Requirements Section -->
+    <section id="requirements" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Design Requirements & Initial Planning</h2>
+                
+                <div class="requirements-content">
+                    <div class="requirement-block">
+                        <h3>Engineering Calculations</h3>
+                        <div class="content-layout">
+                            <img src="../Images/placeholder-torque-calc.png" alt="Torque Calculations" class="content-image">
+                            <div class="content-text">
+                                <p>I began by calculating the amount of torque and force required to move the cart up different slopes, factoring in the weight of the golf bag, the cart, and the incline of the course. After several calculations, I had a good set of numbers that defined what kind of motors I'd need and how powerful the system would have to be.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="design-requirements-list">
+                        <h3>Core Design Requirements</h3>
+                        <div class="requirements-grid">
+                            <div class="req-item">
+                                <span class="req-icon">📡</span>
+                                <h4>Completely Wireless</h4>
+                                <p>No cables between controller and cart</p>
+                            </div>
+                            <div class="req-item">
+                                <span class="req-icon">📦</span>
+                                <h4>Compact Design</h4>
+                                <p>Integrate seamlessly with existing cart</p>
+                            </div>
+                            <div class="req-item">
+                                <span class="req-icon">🎮</span>
+                                <h4>Easy to Control</h4>
+                                <p>Intuitive handheld remote control</p>
+                            </div>
+                            <div class="req-item">
+                                <span class="req-icon">🔋</span>
+                                <h4>Long Battery Life</h4>
+                                <p>Multiple rounds without recharging</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Components Section -->
+    <section id="components" class="project-section alt-bg">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Technical Components & System Design</h2>
+                
+                <div class="components-grid">
+                    <div class="component-item">
+                        <h3>ESP32 Microcontrollers</h3>
+                        <img src="../Images/placeholder-esp32.png" alt="ESP32" class="component-image">
+                        <div class="component-details">
+                            <p><strong>Purpose:</strong> Wireless Communication</p>
+                            <p>Two ESP32s — one in the handheld controller and one in the cart — connected via Wi-Fi for responsive, long-range communication while keeping the system simple and modern.</p>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <h3>Motor System</h3>
+                        <img src="../Images/placeholder-motors.webp" alt="Motors" class="component-image">
+                        <div class="component-details">
+                            <p><strong>Challenge:</strong> Initial Motor Failure</p>
+                            <p>First motors from China had misleading specs — advertised torque was only instantaneous, not sustained. Replaced with higher-quality motors capable of handling the actual load requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <h3>Dual-Channel Motor Driver</h3>
+                        <img src="../Images/placeholder-motor-driver.jpg" alt="Motor Driver" class="component-image">
+                        <div class="component-details">
+                            <p><strong>Reliability:</strong> One of the Best Parts</p>
+                            <p>Compact design that stayed cool under load with all components rated for much higher voltage than used. Proved to be one of the most reliable parts of the system.</p>
+                        </div>
+                    </div>
+
+                    <div class="component-item">
+                        <h3>Battery System</h3>
+                        <img src="../Images/placeholder-battery.webp" alt="Battery" class="component-image">
+                        <div class="component-details">
+                            <p><strong>Specs:</strong> 24V, 15Ah LiFePO4</p>
+                            <p>Two 12-volt LiFePO4 batteries wired in series, providing enough capacity to last through roughly two full rounds of golf on hilly terrain without recharging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Controller Evolution Section -->
+    <section id="controller" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Controller Evolution</h2>
+                
+                <div class="evolution-content">
+                    <div class="version-comparison">
+                        <div class="version-block version-old">
+                            <h3>Version 1.0: Joystick Design</h3>
+                            <img src="../Images/placeholder-controller-v1.jpg" alt="Original Controller" class="version-image">
+                            <div class="version-details">
+                                <h4>Problems</h4>
+                                <ul class="problem-list">
+                                    <li>Large and bulky</li>
+                                    <li>Uncomfortable to hold</li>
+                                    <li>Easy to bump accidentally</li>
+                                    <li>Fragile construction</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="arrow-divider">→</div>
+
+                        <div class="version-block version-new">
+                            <h3>Version 2.0: Button-Based Design</h3>
+                            <img src="../Images/placeholder-controller-v2.jpg" alt="Final Controller" class="version-image">
+                            <div class="version-details">
+                                <h4>Improvements</h4>
+                                <ul class="success-list">
+                                    <li>Compact (2" × 2")</li>
+                                    <li>Fits in pocket</li>
+                                    <li>Intuitive button controls</li>
+                                    <li>18650 battery powered</li>
+                                    <li>Onboard voltage regulation</li>
+                                    <li>Rechargeable</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gearbox Challenge Section -->
+    <section id="gearbox" class="project-section alt-bg">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">The Gearbox Challenge</h2>
+                
+                <div class="gearbox-content">
+                    <div class="challenge-intro">
+                        <p class="large-text">
+                            The motor change created a new engineering challenge. The new motors were direct-drive, meaning they lacked built-in gear reduction. To get the necessary torque, I needed to design my own gearbox.
+                        </p>
+                    </div>
+
+                    <div class="gearbox-design">
+                        <h3>Worm Gear Solution</h3>
+                        <div class="design-layout">
+                            <img src="../Images/placeholder-gearbox.png" alt="Worm Gear Design" class="design-image">
+                            <div class="design-specs">
+                                <div class="spec-box">
+                                    <h4>36:1 Reduction Ratio</h4>
+                                    <p>Perfect balance of torque multiplication and speed</p>
+                                </div>
+                                <div class="spec-box">
+                                    <h4>~10 MPH Top Speed</h4>
+                                    <p>Well above walking speed for any terrain</p>
+                                </div>
+                                <div class="spec-box">
+                                    <h4>High Torque Output</h4>
+                                    <p>Capable of handling steep inclines with full load</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="iteration-story">
+                        <h3>Design Iterations & Problem Solving</h3>
+                        <div class="iteration-timeline">
+                            <div class="iteration-item">
+                                <div class="iteration-number">1</div>
+                                <h4>Initial 3D Printed Gears</h4>
+                                <p><strong>Problem:</strong> Standard printed parts couldn't handle the torque. Gears would strip repeatedly, with layer lines splitting under stress.</p>
+                                <img src="../Images/placeholder-failed-gear.png" alt="Failed Gear" class="iteration-image">
+                            </div>
+                            
+                            <div class="iteration-item">
+                                <div class="iteration-number">2</div>
+                                <h4>Multiple Reprints & Testing</h4>
+                                <p><strong>Challenge:</strong> Countless nights of reprinting, reassembling, and testing, only to watch the same failure happen again.</p>
+                                <img src="../Images/placeholder-testing.jpg" alt="Testing Process" class="iteration-image">
+                            </div>
+                            
+                            <div class="iteration-item success">
+                                <div class="iteration-number">3</div>
+                                <h4>SLS Carbon-Composite Print</h4>
+                                <p><strong>Solution:</strong> Pivoted to Selective Laser Sintering with carbon-composite material for higher strength and heat resistance. Applied marine grease for smooth operation.</p>
+                                <img src="../Images/placeholder-final-gear.jpg" alt="Final Gear" class="iteration-image">
+                            </div>
+                        </div>
+                        
+                        <div class="breakthrough-box">
+                            <h4>The Breakthrough Moment</h4>
+                            <p>"Watching the wheels turn smoothly for the first time felt like the payoff for every late night spent tweaking the design."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAD Design Section -->
+    <section id="cad-design" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">CAD Design & Manufacturing</h2>
+                
+                <div class="cad-content">
+                    <p class="large-text">
+                        Once I had the components figured out, I began building everything in Onshape, designing each bracket, motor mount, and housing from scratch. The process went through many iterations — weeks spent refining the designs to make them lighter, easier to print, and more durable.
+                    </p>
+                    
+                    <div class="design-gallery">
+                        <div class="design-item">
+                            <img src="../Images/placeholder-onshape-design.png" alt="Motor Mount" class="design-gallery-image">
+                            <p>Motor Mount Design</p>
+                        </div>
+                        <div class="design-item">
+                            <img src="../Images/placeholder-bracket.png" alt="Bracket" class="design-gallery-image">
+                            <p>Custom Brackets</p>
+                        </div>
+                        <div class="design-item">
+                            <img src="../Images/placeholder-housing.png" alt="Housing" class="design-gallery-image">
+                            <p>Electronics Housing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Result Section -->
+    <section id="result" class="project-section alt-bg">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">The Final Result</h2>
+                
+                <div class="result-content">
+                    <video class="full-width-image" controls autoplay muted loop style="max-width: 50%; height: auto;">
+                        <source src="../Images/placeholder-cart-action.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                    <div class="result-highlights">
+                        <div class="highlight-item">
+                            <h3>✓ System Performance</h3>
+                            <p>The controller communicated reliably with the cart over Wi-Fi, and the motors delivered smooth, steady motion even on hills.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3>✓ Pain-Free Golf</h3>
+                            <p>My dad could walk beside me during an entire round without having to push or carry anything. The cart followed him effortlessly.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h3>✓ Time Together Restored</h3>
+                            <p>For the first time in a long time, my dad could walk the course pain-free, and we could spend that time together — talking, laughing, and sharing the game we love.</p>
+                        </div>
+                    </div>
+
+                    <div class="specs-summary">
+                        <h3>Technical Summary</h3>
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <strong>Communication:</strong>
+                                <p>Dual ESP32 Wi-Fi system</p>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Power:</strong>
+                                <p>24V, 15Ah LiFePO4</p>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Drivetrain:</strong>
+                                <p>36:1 worm gear reduction</p>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Speed:</strong>
+                                <p>~10 MPH maximum</p>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Range:</strong>
+                                <p>2+ full rounds</p>
+                            </div>
+                            <div class="summary-item">
+                                <strong>Controller:</strong>
+                                <p>2" × 2" pocket-sized</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Reflection Section -->
+    <section id="reflection" class="project-section">
+        <div class="row">
+            <div class="twelve columns">
+                <h2 class="section-title">Beyond the Engineering</h2>
+                
+                <div class="reflection-content">
+                    <div class="quote-block">
+                        <blockquote>
+                            "It wasn't just a project anymore — it was a solution that changed the way we experienced the game."
+                        </blockquote>
+                    </div>
+
+                    <div class="reflection-text">
+                        <p class="large-text">
+                            What started as a simple idea to make golf easier for my dad became a deep engineering challenge — involving mechanical design, electrical systems, embedded programming, and problem-solving at every level. But beyond all the technical details, what made it meaningful was the personal motivation behind it.
+                        </p>
+                        
+                        <div class="meaning-box">
+                            <h3>What Made It Worth Building</h3>
+                            <p>Every gear, wire, and line of code represented not just a piece of a machine, but a way to restore something important to both of us — time together.</p>
+                            <p><strong>And that, more than anything, is what made it worth building.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="skills-developed">
+                        <h3>Skills & Disciplines Applied</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <span class="skill-icon">⚙️</span>
+                                <h4>Mechanical Design</h4>
+                                <p>Custom gearbox, mounts, and brackets</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">⚡</span>
+                                <h4>Electrical Systems</h4>
+                                <p>Power distribution, motor control, battery management</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">💻</span>
+                                <h4>Embedded Programming</h4>
+                                <p>ESP32 Wi-Fi communication, control systems</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🔧</span>
+                                <h4>Iterative Problem-Solving</h4>
+                                <p>Multiple design revisions and material testing</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🎨</span>
+                                <h4>CAD Design</h4>
+                                <p>Onshape modeling and assembly</p>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-icon">🏭</span>
+                                <h4>Manufacturing</h4>
+                                <p>3D printing, SLS printing, assembly</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="twelve columns">
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2023 Liam Carlin</li>
+                    <li>Design by Liam Carlin</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
