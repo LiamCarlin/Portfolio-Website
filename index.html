@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Liam Carlin — Mechanical Engineer</title>
+  <meta name="description"
+    content="Mechanical engineering portfolio — Olin College of Engineering, Class of 2026. Vehicles, robotics, controls, fabrication." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <main class="sheet">
+
+    <!-- ── Top nav ──────────────────────────────────── -->
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M5 4v16M5 20h6" />
+            <path d="M19 7a5 5 0 0 0-5-2 5 5 0 0 0-5 7v1a5 5 0 0 0 5 7 5 5 0 0 0 5-2" />
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Liam Carlin</div>
+          <div class="brand-sub">Mechanical Engineer · Olin '26</div>
+        </div>
+      </div>
+
+      <nav class="navlinks">
+        <a data-nav="home" class="active"><span class="num">01</span>Index</a>
+        <a data-nav="projects"><span class="num">02</span>Projects</a>
+        <a data-nav="experience"><span class="num">03</span>Experience</a>
+        <a data-nav="about"><span class="num">04</span>About</a>
+        <a data-nav="hobbies"><span class="num">05</span>Hobbies</a>
+        <a data-nav="contact"><span class="num">06</span>Contact</a>
+      </nav>
+
+      <div class="navmeta">
+        <span class="chip"><span class="dot"></span>Available · Summer '26</span>
+        <span class="chip" id="clock">—</span>
+      </div>
+    </header>
+
+    <!-- ── Meta strip ───────────────────────────────── -->
+    <div class="meta-strip">
+      <div style="grid-column:span 3">REV · 2026.04.18</div>
+      <div style="grid-column:span 3">SHEET · 01 / 05</div>
+      <div style="grid-column:span 3">DRAWN · L.Z.CARLIN</div>
+      <div style="grid-column:span 3;text-align:right">SCALE · 1 : 1</div>
+    </div>
+
+    <!-- ── Hero ─────────────────────────────────────── -->
+    <section class="hero" id="section-hero">
+      <div class="coord tl">N 42°27′12″</div>
+      <div class="coord tr">W 71°16′05″</div>
+
+      <div>
+        <div class="mono" style="margin-bottom:18px">§ 01 &nbsp; HERO / POSITIONING</div>
+        <h1>
+          Builder<span class="amp"> of </span><span class="it">real</span><br />
+          mechanical<br />
+          systems.
+        </h1>
+        <p class="lede">
+          I design, build, and test hardware — from an 85-person Baja SAE car to a thrust‑vector‑controlled rocket. I
+          work fluently between CAD, machine shop, controls, and code, and I care deeply about how the whole system
+          comes together.
+        </p>
+        <div class="cta-row">
+          <a class="btn" data-nav="projects">View Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12">
+              <path d="M5 12h14M13 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a class="btn ghost" data-nav="experience">Experience</a>
+          <a class="btn ghost" data-nav="contact">Contact</a>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="card-title">
+          <span>CARLIN · LIAM Z.</span>
+          <span class="tag">SPEC / v2026.04</span>
+        </div>
+        <dl class="spec-list">
+          <dt>Role</dt>
+          <dd>Mechanical Engineer</dd>
+          <dt>Focus</dt>
+          <dd>Vehicles · Robotics · Controls</dd>
+          <dt>School</dt>
+          <dd>Olin College of Engineering</dd>
+          <dt>Class</dt>
+          <dd>B.S. Engineering, 2026</dd>
+          <dt>Base</dt>
+          <dd>Boston, MA · USA</dd>
+          <dt>Lead</dt>
+          <dd>Olin Baja SAE — PM, 85+</dd>
+          <dt>Tools</dt>
+          <dd>Onshape · SolidWorks · Fusion</dd>
+          <dt>Fab</dt>
+          <dd>Mill · Lathe · Waterjet · Print</dd>
+          <dt>Code</dt>
+          <dd>C++ · Python · JS · Embedded</dd>
+        </dl>
+        <div class="callout-img" id="hero-portrait">
+          <img src="assets/portrait.jpg" alt="Liam Carlin" loading="lazy"
+            style="width:100%;height:100%;object-fit:cover;display:block;">
+          <span class="label">FIG · 01 — PORTRAIT</span>
+          <div class="crosshair ch-tl"></div>
+          <div class="crosshair ch-tr"></div>
+          <div class="crosshair ch-bl"></div>
+          <div class="crosshair ch-br"></div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- ── Featured projects ────────────────────────── -->
+    <div class="section-head" id="section-projects">
+      <h2>Selected <em style="font-style:italic">works</em></h2>
+      <div class="kicker">§ 02 · Featured · <span id="feat-count">—</span> entries</div>
+    </div>
+    <section class="projects" id="featured"></section>
+
+    <!-- ── Experience ───────────────────────────────── -->
+    <div class="section-head" id="section-experience">
+      <h2>Experience &amp; <em>record</em></h2>
+      <div class="kicker">§ 03 · Full timeline · Expanded</div>
+    </div>
+    <section class="exp">
+      <aside class="exp-rail">
+        <div class="label">§ Filter</div>
+        <h4>Work, <em>in order.</em></h4>
+        <p class="note">Roles, engagements, and leadership across engineering, industry, and entrepreneurship.</p>
+        <div class="filters" id="exp-filters">
+          <button class="on" data-filter="all">All <span class="ct" id="ct-all">—</span></button>
+          <button data-filter="engineering">Engineering <span class="ct" id="ct-engineering">—</span></button>
+          <button data-filter="industry">Industry <span class="ct" id="ct-industry">—</span></button>
+          <button data-filter="leadership">Leadership <span class="ct" id="ct-leadership">—</span></button>
+          <button data-filter="entrepreneurship">Entrepreneurship <span class="ct"
+              id="ct-entrepreneurship">—</span></button>
+        </div>
+      </aside>
+      <div class="exp-body" id="exp-body"></div>
+    </section>
+
+    <!-- ── Philosophy / About ───────────────────────── -->
+    <section class="philo" id="section-about">
+      <div>
+        <div class="label">§ 04 · Approach</div>
+        <h3>Engineering is how<br />I <em>think</em>.</h3>
+        <div class="capabilities" style="margin-top:28px">
+          <div class="cap"><span class="k">01</span><span class="v">Design systems from first principles, not
+              templates.</span></div>
+          <div class="cap"><span class="k">02</span><span class="v">Prototype fast. Instrument everything. Iterate with
+              data.</span></div>
+          <div class="cap"><span class="k">03</span><span class="v">Sweat the manufacturing. Tolerances, fasteners,
+              fits.</span></div>
+          <div class="cap"><span class="k">04</span><span class="v">Write code where the mechanism needs it. Stay
+              hands‑on.</span></div>
+        </div>
+      </div>
+      <div class="body">
+        <p>I build because I want to understand how things actually work — not on paper, but in the shop, on the track,
+          in the air. Most of my projects start with a question I can't answer from a textbook, and end with a part I
+          had to make twice.</p>
+        <p>What I care about: mechanical systems that are honestly designed, instrumentation that tells the truth, and
+          teams that can still move fast when a bracket cracks at 2 AM. I'm fluent across CAD, machining, controls, and
+          firmware, and I use whichever tool the problem is asking for.</p>
+        <p>My strongest work sits at the seams — between mechanical and electrical, between driver feel and sensor data,
+          between a clean CAD file and a part you can hold. That's where I want to keep working.</p>
+      </div>
+    </section>
+
+    <!-- ── Project archive ──────────────────────────── -->
+    <div class="section-head">
+      <h2>Project <em>archive</em></h2>
+      <div class="kicker">§ 05 · All work · Sorted by year</div>
+    </div>
+    <section class="archive">
+      <div class="archive-row head">
+        <div>Year</div>
+        <div>Title</div>
+        <div>Category</div>
+        <div>Role</div>
+        <div>Tools</div>
+        <div></div>
+      </div>
+      <div id="archive-rows"></div>
+    </section>
+
+    <!-- ── Hobbies (collapsible) ────────────────────── -->
+    <section class="hobbies-sec" id="section-hobbies">
+      <button class="hobbies-toggle" id="hobbies-toggle" aria-expanded="false">
+        <h2>Outside the <em>shop</em></h2>
+        <span class="k">§ 06 · Hobbies · <span id="hobby-count">—</span> entries <span class="plus"
+            aria-hidden="true"></span></span>
+      </button>
+      <div class="hobbies-panel">
+        <div class="hobbies-grid" id="hobbies-grid"></div>
+      </div>
+    </section>
+
+    <!-- ── Contact ──────────────────────────────────── -->
+    <section class="contact" id="section-contact">
+      <div>
+        <div class="mono" style="margin-bottom:20px">§ 07 · REACH OUT</div>
+        <h2>Let's build<br /><em>something</em>.</h2>
+      </div>
+      <div class="chan">
+        <a href="mailto:Lcarlin@olin.edu"><span>Email</span><span class="v">Lcarlin@olin.edu →</span></a>
+        <a href="https://linkedin.com/in/liamzcarlin" target="_blank" rel="noopener"><span>LinkedIn</span><span
+            class="v">@liamzcarlin →</span></a>
+        <a href="https://github.com/LiamCarlin" target="_blank" rel="noopener"><span>GitHub</span><span
+            class="v">@LiamCarlin →</span></a>
+        <a href="assets/resume.pdf" target="_blank" rel="noopener"><span>Resume</span><span class="v">PDF →</span></a>
+        <a href="#" onclick="return false"><span>Phone</span><span class="v">on request →</span></a>
+      </div>
+    </section>
+
+    <!-- ── Title block footer ───────────────────────── -->
+    <footer class="titleblock">
+      <div class="tb-cell tb-name">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M5 4v16M5 20h6" />
+          <path d="M19 7a5 5 0 0 0-5-2 5 5 0 0 0-5 7v1a5 5 0 0 0 5 7 5 5 0 0 0 5-2" />
+        </svg>
+        <div><span class="k">Drawn by</span><span class="v">Liam Z. Carlin</span></div>
+      </div>
+      <div class="tb-cell"><span class="k">Project</span><span class="v">PORTFOLIO · 2026</span></div>
+      <div class="tb-cell"><span class="k">Drawing №</span><span class="v">LZC-PF-001</span></div>
+      <div class="tb-cell"><span class="k">Rev.</span><span class="v">C · 2026-04-18</span></div>
+      <div class="tb-cell"><span class="k">Sheet</span><span class="v">01 OF 05</span></div>
+    </footer>
+
+    <div class="meta-strip" style="border-bottom:none;border-top:1px solid var(--ink);margin-top:-1px">
+      <div style="grid-column:span 4">© 2026 LIAM Z. CARLIN · ALL RIGHTS RESERVED</div>
+      <div style="grid-column:span 4;text-align:center">HANDMADE · NO TEMPLATES · NO AI SLOP</div>
+      <div style="grid-column:span 4;text-align:right">END OF DOC · ◼</div>
+    </div>
+
+  </main>
+
+  <!-- ── Theme toggle ──────────────────────────────── -->
+  <button class="theme-btn" id="theme-btn">◑ Dark</button>
+
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/tweaks.js"></script>
+</body>
+
+</html>

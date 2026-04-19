@@ -1,0 +1,92 @@
+<!--
+  PROJECT PAGE TEMPLATE
+  ─────────────────────
+  Copy this file to projects/<id>.html
+  Change two things:
+    1. <title> — replace "Project Title" with the project name
+    2. const PROJECT_ID = '<id>';  — replace with the project's id from data.js
+
+  That's it. project.js reads PROJECTS from data.js and renders everything else.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Project Title · Liam Carlin</title>
+<meta name="description" content="" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<main class="sheet">
+
+  <!-- ── Top nav ──────────────────────────────────── -->
+  <header class="topbar">
+    <div class="brand">
+      <a href="../index.html" class="brand" style="display:flex;align-items:center;gap:14px">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+            <path d="M5 4v16M5 20h6"/>
+            <path d="M19 7a5 5 0 0 0-5-2 5 5 0 0 0-5 7v1a5 5 0 0 0 5 7 5 5 0 0 0 5-2"/>
+          </svg>
+        </div>
+        <div>
+          <div class="brand-name">Liam Carlin</div>
+          <div class="brand-sub">Mechanical Engineer · Olin '26</div>
+        </div>
+      </a>
+    </div>
+
+    <nav class="navlinks">
+      <a href="../index.html"><span class="num">01</span>Index</a>
+      <a href="../index.html#projects" class="active"><span class="num">02</span>Projects</a>
+      <a href="../index.html#experience"><span class="num">03</span>Experience</a>
+      <a href="../index.html#about"><span class="num">04</span>About</a>
+      <a href="../index.html#contact"><span class="num">06</span>Contact</a>
+    </nav>
+
+    <div class="navmeta">
+      <span class="chip"><span class="dot"></span>Available · Summer '26</span>
+      <span class="chip" id="clock">—</span>
+    </div>
+  </header>
+
+  <!-- ── Project content (rendered by project.js) ── -->
+  <div id="pd-content"></div>
+
+  <!-- ── Title block footer ───────────────────────── -->
+  <footer class="titleblock">
+    <div class="tb-cell tb-name">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+        <path d="M5 4v16M5 20h6"/>
+        <path d="M19 7a5 5 0 0 0-5-2 5 5 0 0 0-5 7v1a5 5 0 0 0 5 7 5 5 0 0 0 5-2"/>
+      </svg>
+      <div><span class="k">Drawn by</span><span class="v">Liam Z. Carlin</span></div>
+    </div>
+    <div class="tb-cell"><span class="k">Project</span><span class="v">PORTFOLIO · 2026</span></div>
+    <div class="tb-cell"><span class="k">Drawing №</span><span class="v">LZC-PF-001</span></div>
+    <div class="tb-cell"><span class="k">Rev.</span><span class="v">C · 2026-04-18</span></div>
+    <div class="tb-cell"><span class="k">Sheet</span><span class="v">01 OF 05</span></div>
+  </footer>
+
+  <div class="meta-strip" style="border-bottom:none;border-top:1px solid var(--ink);margin-top:-1px">
+    <div style="grid-column:span 4">© 2026 LIAM Z. CARLIN · ALL RIGHTS RESERVED</div>
+    <div style="grid-column:span 4;text-align:center">HANDMADE · NO TEMPLATES · NO AI SLOP</div>
+    <div style="grid-column:span 4;text-align:right">END OF DOC · ◼</div>
+  </div>
+
+</main>
+
+<!-- ── Theme toggle ──────────────────────────────── -->
+<button class="theme-btn" id="theme-btn">◑ Dark</button>
+
+<script src="../js/data.js"></script>
+<script>const PROJECT_ID = 'REPLACE_WITH_ID';</script>
+<script src="../js/project.js"></script>
+<script src="../js/tweaks.js"></script>
+</body>
+</html>
