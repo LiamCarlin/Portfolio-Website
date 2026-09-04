@@ -520,6 +520,7 @@ body.dark .btn.ghost { background: transparent; color: var(--ink); }
   transition: transform .4s ease;
 }
 .pd-sec-img-wrap:hover img { transform: scale(1.03); }
+.pd-sec-img-wrap.contain img { object-fit: contain; padding: 18px; }
 .pd-sec-img-label {
   position: absolute; bottom: 8px; right: 10px;
   font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase;
@@ -549,6 +550,7 @@ body.dark .btn.ghost { background: transparent; color: var(--ink); }
 .gshot:hover { border-color: var(--ink); }
 .gshot img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; display: block; }
 .gshot:hover img { transform: scale(1.05); }
+.gshot.contain img { object-fit: contain; padding: 10px; }
 .gshot-num {
   position: absolute; top: 7px; left: 9px; z-index: 1;
   font-family: var(--mono); font-size: 9px; letter-spacing: .1em; text-transform: uppercase;

@@ -47,7 +47,8 @@
   const hasHeroImg = p.heroImage && p.heroImage.trim();
 
   /* Gallery: skip first image if it's the hero (avoid duplication) */
-  const allGallery = (p.gallery && p.gallery.length) ? p.gallery : [];
+  const allGallery = ((p.gallery && p.gallery.length) ? p.gallery : [])
+    .map(g => (typeof g === 'string' ? { src: g } : g));
   /* We'll show full gallery in the grid at bottom */
 
   /* Body sections with optional inline images */
@@ -65,7 +66,7 @@
           </div>
           ${hasImg ? `
           <div class="pd-sec-img">
-            <div class="pd-sec-img-wrap">
+            <div class="pd-sec-img-wrap${s.fit === 'contain' ? ' contain' : ''}">
               <img src="${s.img}" alt="${s.h}" loading="lazy"/>
               <div class="pd-sec-img-label">${p.num}-FIG-${String(i + 1).padStart(2,'0')}</div>
             </div>
@@ -76,9 +77,9 @@
 
   /* Gallery grid — all images */
   const galleryHtml = allGallery.length
-    ? allGallery.map((src, i) => `
-        <div class="gshot" data-idx="${i}">
-          <img src="${src}" alt="${p.title} — figure ${i + 1}" loading="lazy"/>
+    ? allGallery.map((g, i) => `
+        <div class="gshot${g.fit === 'contain' ? ' contain' : ''}" data-idx="${i}">
+          <img src="${g.src}" alt="${p.title} — figure ${i + 1}" loading="lazy"/>
           <span class="gshot-num">FIG · ${String(i + 1).padStart(2, '0')}</span>
         </div>`).join('')
     : Array.from({ length: 6 }).map((_, i) => `
@@ -193,7 +194,7 @@
 
     function showLb(i) {
       currentIdx = (i + allGallery.length) % allGallery.length;
-      lbImg.src = allGallery[currentIdx];
+      lbImg.src = allGallery[currentIdx].src;
       lbCtr.textContent = `${currentIdx + 1} / ${allGallery.length}`;
       lb.classList.add('open');
       document.body.style.overflow = 'hidden';
